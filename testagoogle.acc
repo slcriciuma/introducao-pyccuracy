@@ -1,0 +1,14 @@
+Como um usuario
+Eu quero fazer busca
+Para eu testar o google
+
+Cenário 1 - Buscando por Behaviour-Driven Development
+Dado que
+   Eu navego para "http://www.google.com.br"
+Quando
+   Eu preencho a caixa de texto "q" com "Behaviour-Driven Development"
+   E eu espero por 5 segundos
+   E eu clico no elemento "btnG"
+Então
+   Eu espero por 5 segundos
+   E eu vejo que a caixa de texto "q" contém "Behaviour-Driven Development"

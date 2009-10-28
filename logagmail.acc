@@ -1,0 +1,24 @@
+Como um usuario
+Eu quero logar e deslogar no gmail
+Para eu testar o Gmail
+
+Cenário 3 - Logando no Gmail
+Dado que
+   Eu navego para "http://www.gmail.com"
+Quando
+   Eu preencho a caixa de texto "Email" com "youraccount@gmail.com"
+   E eu preencho a caixa de texto "Passwd" com "yourpassword"
+   E eu clico no elemento "signIn"
+Então
+   Eu espero por 10 segundos
+   E eu vejo que a página atual contém "youraccount@gmail.com"
+
+Cenário 4 - Deslogando do Gmail
+Dado que
+   Eu navego para "http://www.gmail.com"
+   E eu espero por 5 segundos
+Quando
+   Eu clico no elemento ":qk"
+   E eu espero por 10 segundos
+Então
+   Eu vejo que a página atual não contém "youraccount@gmail.com"
